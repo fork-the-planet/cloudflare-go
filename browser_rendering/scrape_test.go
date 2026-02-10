@@ -33,7 +33,7 @@ func TestScrapeNewWithOptionalParams(t *testing.T) {
 			Elements: cloudflare.F([]browser_rendering.ScrapeNewParamsBodyObjectElement{{
 				Selector: cloudflare.F("h1"),
 			}}),
-			URL:           cloudflare.F("https://www.example.com/"),
+			HTML:          cloudflare.F("x"),
 			ActionTimeout: cloudflare.F(120000.000000),
 			AddScriptTag: cloudflare.F([]browser_rendering.ScrapeNewParamsBodyObjectAddScriptTag{{
 				ID:      cloudflare.F("id"),

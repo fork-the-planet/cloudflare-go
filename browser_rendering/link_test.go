@@ -30,7 +30,7 @@ func TestLinkNewWithOptionalParams(t *testing.T) {
 	_, err := client.BrowserRendering.Links.New(context.TODO(), browser_rendering.LinkNewParams{
 		AccountID: cloudflare.F("account_id"),
 		Body: browser_rendering.LinkNewParamsBodyObject{
-			URL:           cloudflare.F("https://www.example.com/"),
+			HTML:          cloudflare.F("x"),
 			ActionTimeout: cloudflare.F(120000.000000),
 			AddScriptTag: cloudflare.F([]browser_rendering.LinkNewParamsBodyObjectAddScriptTag{{
 				ID:      cloudflare.F("id"),

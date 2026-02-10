@@ -30,7 +30,7 @@ func TestSnapshotNewWithOptionalParams(t *testing.T) {
 	_, err := client.BrowserRendering.Snapshot.New(context.TODO(), browser_rendering.SnapshotNewParams{
 		AccountID: cloudflare.F("account_id"),
 		Body: browser_rendering.SnapshotNewParamsBodyObject{
-			URL:           cloudflare.F("https://www.example.com/"),
+			HTML:          cloudflare.F("x"),
 			ActionTimeout: cloudflare.F(120000.000000),
 			AddScriptTag: cloudflare.F([]browser_rendering.SnapshotNewParamsBodyObjectAddScriptTag{{
 				ID:      cloudflare.F("id"),
